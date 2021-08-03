@@ -6,7 +6,16 @@ namespace EmployeeWageComputationpr
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Employee Wage Computation Program");
+            Random rand = new Random();
+            int EmpCheck =rand.Next(0, 2);
+            if (EmpCheck == 0)
+            {
+                Console.WriteLine("Employee is Present");
+            }
+            else
+            {
+                Console.WriteLine("Employee is Absent");
+            }
         }
     }
 }
